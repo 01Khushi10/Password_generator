@@ -8,8 +8,70 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
+    <!--Wrapper-->
     <div class="wrapper">
 
+        <!--Container-->
+        <div class="container">
+            <h1>password Generator</h1>
+
+            <!--Display Password Section-->
+            <div class="display_container">
+                <input type="text" placeholder="Password" class="display" id="display">
+                <button>
+                    <img src="./assets/copy.svg" alt="copy" width="23" height="23
+                    ">
+                    <span dataCopyMsg></span>
+                </button>
+            </div>
+
+            <!--Input Container-->
+            <div>
+
+                <!--Password Length-->
+                <div>
+                    <p>password length</p>
+                    <p dataLengthNumber>0</p>
+                </div>
+
+                <!--Slider-->
+                <input dataLengthSlider type="range" min="1" max="20" step="1" id="passwordLength">
+               
+                
+                <!--Checkboxes-->
+                <div>
+                    <input type="checkbox"   id="uppercase">
+                    <label for="uppercaseLetters">Includes Uppercase Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox"   id="lowercase">
+                    <label for="lowercaseLetters">Includes Lowercase Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox"   id="numbers">
+                    <label for="numbers">Includes Numbers</label>
+                </div>
+                <div>
+                    <input type="checkbox"   id="symbols">
+                    <label for="symbols">Includes Symbols</label>
+                </div>
+
+
+                <!--Display strength Section-->
+                <div class="strengthConatiner">
+                    <p>Strength</p>
+                    <div  dataIndicator></div>
+                </div>
+
+                <!--Generate Password Button-->
+                <button class="generatePassword">Generate Password</button>
+                
+                
+                
+                
+                
+            </div>
+        </div>
     </div>
     
 
