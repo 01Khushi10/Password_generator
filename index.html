@@ -25,9 +25,9 @@
             <input class="display" type="text" readonly placeholder="Password" dataPassword-display>
 
             <!--Copy Btn-->
-            <button data-copy>
-                <span data-copyMsg>copied</span>
-                <img src="./assets/copy.svg" width="23" height="23" alt="">
+            <button class="copyBtn" data-copy>
+                <span class="tooltip" data-copyMsg></span>
+                <img src="./assets/copy.svg" width="23" height="23 " alt="">
             </button>
         </div>
 
@@ -41,25 +41,25 @@
             </div>
 
             <!--Slider-->
-            <input type="range" min="1" max="20" step="1" length-Slider name="" id="">
+            <input class="slider" type="range" min="1" max="20" step="1" length-Slider name="" id="">
 
             <!--CheckBoxes-->
-            <div>
+            <div class="check">
                 <input type="checkbox" id="uppercase">
                 <label for="uppercase">Includes Uppercase letters</label>
             </div>
             
-            <div>
+            <div class="check">
                 <input type="checkbox" id="lowercase">
                 <label for="lowercase">Includes lowercase letters</label>
             </div>
 
-            <div>
+            <div class="check">
                 <input type="checkbox" id="numbers">
                 <label for="numbers">Includes numbers</label>
             </div>
                 
-            <div>
+            <div class="check">
                 <input type="checkbox" id="symbols">
                 <label for="symbols">Includes symbols</label>
             </div>
@@ -87,6 +87,6 @@
 
 
 
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
